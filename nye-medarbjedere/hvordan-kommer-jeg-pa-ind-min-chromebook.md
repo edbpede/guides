@@ -34,7 +34,7 @@ For at finde dit brugernavn, følg denne instruktion:
 
 4. Dit brugernavn vil fremgå her:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Mit brugernavn er altså "**edbpede**". Det er det jeg skal bruge, når jeg logger ind på min Chromebook.
 6. Det vil også være din email. I mit tilfælde vil min email-addresse så være "**edbpede@meddel.dk**"
@@ -46,7 +46,7 @@ Du skal nu igang med den mest irriterende proces, at lave et stærkt kodeord. I 
 1. For at du kan skifte kode, skal du trykke på <img src="../.gitbook/assets/image (11).png" alt="" data-size="line">
 2. Du kan se kodeords-kravene under "**Regler for kodeordkompleksitet**"
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. For at opsummere kort:
    1. Dit kodeord skal være mindst 15 tegn langt. Der behøves **ikke** at være tal eller tegn.

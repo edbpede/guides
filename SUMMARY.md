@@ -47,6 +47,8 @@
 
 * [Sådan logger du på den nye eReolenGO!](andet/sadan-logger-du-pa-den-nye-ereolengo.md)
 * [Sådan kan du stadig se YouTube](andet/sadan-kan-du-stadig-se-youtube.md)
+* [Chromebook Tricks](andet/chromebook-tricks/README.md)
+  * [Hvordan slår jeg touch-funktionen fra?](andet/chromebook-tricks/hvordan-slar-jeg-touch-funktionen-fra.md)
 
 ## Gode Links
 
