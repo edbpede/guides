@@ -10,7 +10,7 @@ description: >-
 
 #### 1. Tryk på på URL-bar'en
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Indtast "ereolengo.dk"
 
@@ -22,7 +22,7 @@ description: >-
 
 #### 4. Vælg "Ishøj Bibliotek"
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Tryk "OK"
 
@@ -46,7 +46,7 @@ description: >-
 
 #### 10. Tryk i søgefeltet
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### 11. Skriv en titel på en bog
 

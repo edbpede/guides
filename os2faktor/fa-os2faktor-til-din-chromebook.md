@@ -18,36 +18,36 @@ Denne ekstra kode er påkrævet, når man tilgår følsom data. Det kan være si
 
 1. Tryk på Chrome browser ikonet, nederst på din taskbar: <img src="../.gitbook/assets/trin001-removebg-preview.png" alt="" data-size="line">
 2. Tryk på puslespilsbrikken oppe i højre hjørne i Chrome browseren: <img src="../.gitbook/assets/trin002.png" alt="" data-size="line">
-3. Find "OS2faktor Chrome Extension" og tryk på knappenålen: <img src="../.gitbook/assets/image (35).png" alt="" data-size="line">
+3. Find "OS2faktor Chrome Extension" og tryk på knappenålen: <img src="../.gitbook/assets/image (42).png" alt="" data-size="line">
 4. Nu har vi sat OS2faktor som et fast punkt i din Chrome browser. Så er den nemmere at finde!
-5. Det skulle gerne se sådan ud: <img src="../.gitbook/assets/image (37).png" alt="" data-size="line">
-6. Tryk derefter på OS2faktor ikonet: <img src="../.gitbook/assets/image (38).png" alt="" data-size="line">
+5. Det skulle gerne se sådan ud: <img src="../.gitbook/assets/image (44).png" alt="" data-size="line">
+6. Tryk derefter på OS2faktor ikonet: <img src="../.gitbook/assets/image (45).png" alt="" data-size="line">
 7. Tryk på "**Aktiver enhed**":
-
-![](<../.gitbook/assets/image (39).png>)
-
-8. Du skal nu give din enhed et navn. I mit tilfælde kalder jeg den bare "**Chromebook**":
-
-![](<../.gitbook/assets/image (40).png>)
-
-9. Tryk på <img src="../.gitbook/assets/image (41).png" alt="" data-size="line"> for at fortsætte
-10. Vælg nu en PIN-kode. Den skal være på 4 cifre og må ikke være 4 ens cifre.
-
-![](<../.gitbook/assets/image (42).png>)
-
-11. Tryk på <img src="../.gitbook/assets/image (43).png" alt="" data-size="line"> for at fortsætte
-12. Den vil nu bede dig om, at verificere din identitet. Her skal du bruge dit **MitID**, til at verificere dig med.
-
-![](<../.gitbook/assets/image (44).png>)
-
-13. Tryk på <img src="../.gitbook/assets/image (45).png" alt="" data-size="line"> for at fortsætte
-14. Log ind med dit **MitID**. I mit tilfælde **edbpede**.
 
 ![](<../.gitbook/assets/image (46).png>)
 
+8. Du skal nu give din enhed et navn. I mit tilfælde kalder jeg den bare "**Chromebook**":
+
+![](<../.gitbook/assets/image (47).png>)
+
+9. Tryk på <img src="../.gitbook/assets/image (48).png" alt="" data-size="line"> for at fortsætte
+10. Vælg nu en PIN-kode. Den skal være på 4 cifre og må ikke være 4 ens cifre.
+
+![](<../.gitbook/assets/image (49).png>)
+
+11. Tryk på <img src="../.gitbook/assets/image (50).png" alt="" data-size="line"> for at fortsætte
+12. Den vil nu bede dig om, at verificere din identitet. Her skal du bruge dit **MitID**, til at verificere dig med.
+
+![](<../.gitbook/assets/image (51).png>)
+
+13. Tryk på <img src="../.gitbook/assets/image (52).png" alt="" data-size="line"> for at fortsætte
+14. Log ind med dit **MitID**. I mit tilfælde **edbpede**.
+
+![](<../.gitbook/assets/image (53).png>)
+
 15. Når du har gennemført, vil dette vise sig, og du er nu færdig:
 
-![](<../.gitbook/assets/image (48).png>)
+![](<../.gitbook/assets/image (55).png>)
 
 ### Fedt! Men hvordan bruger jeg så min OS2faktor?
 

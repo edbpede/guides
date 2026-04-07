@@ -27,10 +27,10 @@ Styrelsen for It og Læring (STIL) har valgt, at fra den 12. december 2024 [udfa
 For at finde dit brugernavn, følg denne instruktion:
 
 1. Gå ind på [https://login.ishoj.dk](https://login.ishoj.dk/)
-2. Tryk på <img src="../.gitbook/assets/image (10).png" alt="" data-size="line">
+2. Tryk på <img src="../.gitbook/assets/image (17).png" alt="" data-size="line">
 3. Log ind med dit MitID, i mit tilfælde "**edbpede**"
 
-<figure><img src="../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt="" width="375"><figcaption></figcaption></figure>
 
 4. Dit brugernavn vil fremgå her:
 
@@ -43,10 +43,10 @@ For at finde dit brugernavn, følg denne instruktion:
 
 Du skal nu igang med den mest irriterende proces, at lave et stærkt kodeord. I Ishøj Kommune har de ret skrappe krav.
 
-1. For at du kan skifte kode, skal du trykke på <img src="../.gitbook/assets/image (11).png" alt="" data-size="line">
+1. For at du kan skifte kode, skal du trykke på <img src="../.gitbook/assets/image (18).png" alt="" data-size="line">
 2. Du kan se kodeords-kravene under "**Regler for kodeordkompleksitet**"
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 3. For at opsummere kort:
    1. Dit kodeord skal være mindst 15 tegn langt. Der behøves **ikke** at være tal eller tegn.
@@ -56,7 +56,7 @@ Du skal nu igang med den mest irriterende proces, at lave et stærkt kodeord. I 
    1. "jeghaderatskiftekodeord"
    2. "jegkanikkelideminkode"
    3. og så videre...
-5. Når du er klar, kan du give dig selv din nyde kode, ved at trykke på <img src="../.gitbook/assets/image (2).png" alt="" data-size="line">
+5. Når du er klar, kan du give dig selv din nyde kode, ved at trykke på <img src="../.gitbook/assets/image (3).png" alt="" data-size="line">
 
 #### Hvordan logger jeg så på min Chromebook?
 

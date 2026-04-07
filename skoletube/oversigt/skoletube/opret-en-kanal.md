@@ -8,12 +8,12 @@ Her er en kort instruks til, hvordan du opretter en kanal på Skoletube. Kanalen
 
 ### Opret en kanal
 
-1. Start med at gå ind på [Skoletube](https://www.skoletube.dk) og tryk på <img src="../../../.gitbook/assets/image (55).png" alt="" data-size="line">
-2. Når du er logget ind, så tryk på <img src="../../../.gitbook/assets/image (56).png" alt="" data-size="line">
+1. Start med at gå ind på [Skoletube](https://www.skoletube.dk) og tryk på <img src="../../../.gitbook/assets/image (62).png" alt="" data-size="line">
+2. Når du er logget ind, så tryk på <img src="../../../.gitbook/assets/image (63).png" alt="" data-size="line">
 3. Du vil blive ført videre til indstillingerne, som du gerne vil have for din kanal
 4. Til at starte med, så giv din kanal et navn, og en kort beskrivelse
 
-<figure><img src="../../../.gitbook/assets/image (57).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (64).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. I hovedreglen kan du lade resten af indstillingerne være, men kig dem igennem, ift hvad dine behov er.
 6. Når du har valgt [dine indstillinger](indstillinger-for-din-kanal.md), skal du trykke på <img src="../../../.gitbook/assets/image-removebg-preview.png" alt="" data-size="line">nede i bunden af siden
