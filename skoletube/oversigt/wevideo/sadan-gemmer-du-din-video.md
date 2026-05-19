@@ -1,3 +1,0 @@
-# Sådan gemmer du din video
-
-Kommer senere...
