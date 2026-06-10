@@ -83,7 +83,18 @@ export default defineConfig({
       ],
       components: {
         Footer: "./src/components/overrides/Footer.astro",
+        PageFrame: "./src/components/overrides/PageFrame.astro",
       },
+      // Re-apply the saved sidebar-collapsed choice before first paint so the
+      // layout never flashes open then shut. The toggle itself lives in the
+      // PageFrame override above.
+      head: [
+        {
+          tag: "script",
+          content:
+            "try{if(localStorage.getItem('edb-sidebar-collapsed')==='1')document.documentElement.setAttribute('data-edb-sidebar-collapsed','')}catch(e){}",
+        },
+      ],
       social: [
         {
           icon: "external",
