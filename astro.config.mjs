@@ -91,6 +91,8 @@ export default defineConfig({
           href: "https://yt.edbpede.net",
         },
       ],
+      // Groups start collapsed so the sidebar stays a short, calm list of
+      // topics instead of a long wall of every guide at once.
       sidebar: [
         {
           label: "Start her",
@@ -98,26 +100,32 @@ export default defineConfig({
         },
         {
           label: "Login, koder og sikker adgang",
+          collapsed: true,
           items: [{ autogenerate: { directory: "login-koder-og-sikker-adgang" } }],
         },
         {
           label: "Chromebook og første dag",
+          collapsed: true,
           items: [{ autogenerate: { directory: "chromebook-og-forste-dag" } }],
         },
         {
           label: "Google Drev og deling",
+          collapsed: true,
           items: [{ autogenerate: { directory: "google-drev" } }],
         },
         {
           label: "Video, medier og læremidler",
+          collapsed: true,
           items: [{ autogenerate: { directory: "video-medier-og-laeremidler" } }],
         },
         {
           label: "Meebook og skoleår",
+          collapsed: true,
           items: [{ autogenerate: { directory: "meebook" } }],
         },
         {
           label: "Links og genveje",
+          collapsed: true,
           items: [{ autogenerate: { directory: "links-og-genveje" } }],
         },
       ],

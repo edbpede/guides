@@ -21,7 +21,7 @@ type Props = {
  */
 export default function StepChecklist(rawProps: Props) {
   const merged = mergeProps(
-    { steps: [] as string[], title: "Følg med — sæt flueben efterhånden" },
+    { steps: [] as string[], title: "Følg med – sæt flueben efterhånden" },
     rawProps,
   );
   const [local] = splitProps(merged, ["steps", "title"]);

@@ -1,6 +1,6 @@
 ---
 title: Hurtige valg for lærere
-description: Hurtige guides til lærere på Strandgårdskolen og i Ishøj Kommune — login, koder, Chromebook, Google Drev, Skoletube, Meebook og nyttige links.
+description: Hurtige guides til lærere på Strandgårdskolen og i Ishøj Kommune – login, koder, Chromebook, Google Drev, Skoletube, Meebook og nyttige links.
 template: splash
 editUrl: false
 lastUpdated: false
@@ -9,19 +9,10 @@ hero:
   image:
     alt: EDB Pede
     file: ../../assets/brand/edbpede.svg
-  actions:
-    - text: Jeg kan ikke logge ind
-      link: /login-koder-og-sikker-adgang/den-bedste-made-at-logge-ind-pa/
-      icon: right-arrow
-      variant: primary
-    - text: Se alle emner
-      link: /login-koder-og-sikker-adgang/
-      icon: open-book
-      variant: minimal
 ---
 
 import SituationCards from "../../components/SituationCards.astro";
-import { Aside } from "@astrojs/starlight/components";
+import { Aside, LinkButton } from "@astrojs/starlight/components";
 
 ## Hvad skal du bruge hjælp til?
 
@@ -29,6 +20,12 @@ Vælg den situation, der minder mest om dit problem. Hver guide har korte trin,
 billeder og hjælp, hvis noget driller.
 
 <SituationCards />
+
+<div class="edb-all-topics">
+  <LinkButton href="/login-koder-og-sikker-adgang/" variant="secondary" icon="open-book" iconPlacement="start">
+    Se alle emner
+  </LinkButton>
+</div>
 
 ## Hvis du ikke ved, hvor du skal starte
 

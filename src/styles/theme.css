@@ -257,3 +257,38 @@
   font-weight: 600;
   color: var(--edb-warm);
 }
+
+/* ------------------------------------------------ sidebar width -------- */
+/*
+  Give the reading column a little more room: the sidebar is a touch
+  narrower than Starlight's default and its groups start collapsed (see the
+  sidebar config), so it reads as a short topic list rather than a wall.
+*/
+:root {
+  --sl-sidebar-width: 17rem;
+}
+
+/* --------------------------------------------- prev / next links ------- */
+/*
+  Starlight's default pagination buttons are large (1rem padding, a 2xl
+  title). Calm them down so they don't shout at the end of every guide.
+*/
+.pagination-links a {
+  padding: 0.7rem 0.9rem;
+  gap: 0.4rem;
+  font-size: var(--sl-text-sm);
+}
+.pagination-links a .link-title {
+  font-size: var(--sl-text-base);
+  font-weight: 600;
+}
+.pagination-links a svg {
+  font-size: 1.1rem;
+}
+
+/* ------------------------------------------- landing "all topics" ------ */
+/* Centres the single "Se alle emner" button under the situation cards. */
+.edb-all-topics {
+  text-align: center;
+  margin-top: 2.5rem;
+}
