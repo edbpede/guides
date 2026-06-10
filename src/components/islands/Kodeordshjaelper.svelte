@@ -18,13 +18,13 @@
   }
 
   function generate(): void {
-    let next = "";
-    // Keep adding words until we comfortably clear the 15-character minimum.
-    while (next.length < 16) {
+    const chosen: string[] = [];
+    // Keep adding distinct words until we comfortably clear the 15-char minimum.
+    while (chosen.join("").length < 16) {
       const w = pick();
-      if (!next.includes(w)) next += w;
+      if (!chosen.includes(w)) chosen.push(w);
     }
-    phrase = next;
+    phrase = chosen.join("");
   }
 
   let copied = $state(false);

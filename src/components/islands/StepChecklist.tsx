@@ -49,6 +49,7 @@ export default function StepChecklist(rawProps: Props) {
   }
 
   return (
+    <Show when={total() > 0}>
     <div class="sc">
       <div class="sc__head">
         <span class="sc__title">{local.title}</span>
@@ -97,5 +98,6 @@ export default function StepChecklist(rawProps: Props) {
         </Show>
       </div>
     </div>
+    </Show>
   );
 }

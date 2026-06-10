@@ -74,7 +74,7 @@
   --edb-brand: oklch(0.55 0.19 260);
   --edb-brand-soft: oklch(0.55 0.19 260 / 0.08);
   --edb-warm: oklch(0.68 0.16 55);
-  --edb-warm-soft: oklch(0.769 0.16 64.5 / 0.14);
+  --edb-warm-soft: oklch(0.68 0.16 55 / 0.14);
 }
 
 /* --------------------------------------------------- global polish ----- */
