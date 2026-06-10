@@ -1,0 +1,259 @@
+/*
+  EDB Pede — theme
+  --------------------------------------------------------------------------
+  Design tokens adapted from the tweakcn "Modern Minimal" theme (trust-blue
+  primary + neutral grays, 0.375rem radius) and extended with one warm amber
+  signature accent (≈ #FB923C — the same orange used in EDB Pede's own
+  screenshot annotations). Calm and legible for non-technical teachers.
+
+  Starlight defaults to its dark theme on :root and exposes light mode under
+  :root[data-theme='light']. We override the accent + gray scales in both.
+*/
+
+:root {
+  --edb-radius: 0.5rem;
+  --edb-radius-lg: 0.875rem;
+
+  /* Brand tokens reused by UnoCSS utilities (see uno.config.ts) */
+  --edb-brand: oklch(0.6231 0.188 259.8);
+  --edb-brand-soft: oklch(0.62 0.18 259.8 / 0.12);
+  --edb-warm: oklch(0.769 0.16 64.5);
+  --edb-warm-soft: oklch(0.769 0.16 64.5 / 0.14);
+
+  /* Typography */
+  --sl-font: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  --sl-font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace,
+    monospace;
+}
+
+/* ---------------------------------------------------------------- DARK -- */
+:root,
+:root[data-theme="dark"] {
+  --sl-color-accent-low: oklch(0.3 0.09 260);
+  --sl-color-accent: oklch(0.6231 0.188 259.8);
+  --sl-color-accent-high: oklch(0.87 0.06 254);
+
+  --sl-color-white: oklch(0.98 0 0);
+  --sl-color-gray-1: oklch(0.92 0 0);
+  --sl-color-gray-2: oklch(0.82 0 0);
+  --sl-color-gray-3: oklch(0.62 0 0);
+  --sl-color-gray-4: oklch(0.45 0 0);
+  --sl-color-gray-5: oklch(0.34 0 0);
+  --sl-color-gray-6: oklch(0.27 0 0);
+  --sl-color-black: oklch(0.2046 0 0);
+
+  --sl-color-bg: oklch(0.2046 0 0);
+  --sl-color-bg-nav: oklch(0.2393 0 0);
+  --sl-color-bg-sidebar: oklch(0.2046 0 0);
+
+  --edb-warm: oklch(0.82 0.14 70);
+  --edb-warm-soft: oklch(0.82 0.14 70 / 0.16);
+}
+
+/* --------------------------------------------------------------- LIGHT -- */
+:root[data-theme="light"] {
+  --sl-color-accent-low: oklch(0.93 0.03 250);
+  --sl-color-accent: oklch(0.55 0.19 260);
+  --sl-color-accent-high: oklch(0.36 0.13 263);
+
+  --sl-color-white: oklch(0.32 0 0);
+  --sl-color-gray-1: oklch(0.4 0 0);
+  --sl-color-gray-2: oklch(0.47 0 0);
+  --sl-color-gray-3: oklch(0.6 0 0);
+  --sl-color-gray-4: oklch(0.75 0 0);
+  --sl-color-gray-5: oklch(0.92 0.006 264);
+  --sl-color-gray-6: oklch(0.96 0.003 264);
+  --sl-color-gray-7: oklch(0.98 0.002 247);
+  --sl-color-black: oklch(1 0 0);
+
+  --sl-color-bg: oklch(1 0 0);
+  --sl-color-bg-nav: oklch(0.99 0.001 247);
+  --sl-color-bg-sidebar: oklch(0.985 0.002 247);
+
+  --edb-brand: oklch(0.55 0.19 260);
+  --edb-brand-soft: oklch(0.55 0.19 260 / 0.08);
+  --edb-warm: oklch(0.68 0.16 55);
+  --edb-warm-soft: oklch(0.769 0.16 64.5 / 0.14);
+}
+
+/* --------------------------------------------------- global polish ----- */
+/* Rounder corners throughout to match the Modern Minimal feel. */
+:root {
+  --sl-shadow-sm: 0 1px 2px oklch(0 0 0 / 0.05);
+  --sl-shadow-md: 0 2px 8px oklch(0 0 0 / 0.06), 0 1px 2px oklch(0 0 0 / 0.04);
+}
+
+/* Slightly tighter, friendlier headings. */
+.sl-markdown-content :is(h1, h2, h3) {
+  letter-spacing: -0.012em;
+}
+
+/* ---------------------------------------------- screenshot framing ----- */
+/*
+  Every screenshot in a guide gets the same calm frame so all guides feel
+  consistent. Small inline UI-button captures opt out with .edb-inline.
+*/
+.sl-markdown-content img:not(.edb-inline) {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: var(--edb-radius);
+  box-shadow: var(--sl-shadow-md);
+  display: block;
+  margin-inline: auto;
+}
+
+.sl-markdown-content figure {
+  margin-inline: auto;
+  text-align: center;
+}
+
+/* Inline screenshots of a single button/icon, used mid-sentence or in steps. */
+.sl-markdown-content img.edb-inline {
+  display: inline-block;
+  height: 1.6em;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 0.15em;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.3rem;
+  box-shadow: none;
+  background: var(--sl-color-gray-6);
+}
+
+/* ---------------------------------------------------- warm asides ------ */
+/* Give "tip" asides the warm signature accent. */
+.starlight-aside--tip {
+  border-inline-start-color: var(--edb-warm);
+  background-color: var(--edb-warm-soft);
+}
+.starlight-aside--tip .starlight-aside__title {
+  color: var(--edb-warm);
+}
+
+/* ---------------------------------------------- troubleshooting -------- */
+/* Native <details> used for the recurring "Hvis det ikke virker" sections. */
+.sl-markdown-content details.edb-trouble {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: var(--edb-radius);
+  background: var(--sl-color-bg-nav);
+  padding: 0.25rem 1rem;
+  margin: 1rem 0;
+}
+.sl-markdown-content details.edb-trouble > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.6rem 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sl-markdown-content details.edb-trouble > summary::before {
+  content: "?";
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: var(--edb-warm-soft);
+  color: var(--edb-warm);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.sl-markdown-content details.edb-trouble[open] > summary {
+  margin-bottom: 0.25rem;
+}
+
+/* ------------------------------------------- Solid StepChecklist ------- */
+.sc {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: var(--edb-radius);
+  background: var(--sl-color-bg-nav);
+  padding: 1.1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+.sc__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+.sc__title {
+  font-weight: 600;
+  color: var(--sl-color-white);
+}
+.sc__count {
+  font-size: var(--sl-text-xs);
+  color: var(--sl-color-gray-3);
+  white-space: nowrap;
+}
+.sc__bar {
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--sl-color-gray-6);
+  overflow: hidden;
+}
+.sc__bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--edb-warm);
+  transition: width 0.25s ease;
+}
+.sc__list {
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.sc__item {
+  margin: 0;
+}
+.sc__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  color: var(--sl-color-gray-1);
+  transition: background 0.15s ease;
+}
+.sc__label:hover {
+  background: var(--edb-brand-soft);
+}
+.sc__label--done {
+  color: var(--sl-color-gray-3);
+  text-decoration: line-through;
+  text-decoration-color: var(--edb-warm);
+}
+.sc__check {
+  margin-top: 0.2em;
+  flex: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--sl-color-accent);
+}
+.sc__foot {
+  margin-top: 0.85rem;
+  min-height: 1.6rem;
+}
+.sc__reset {
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: var(--edb-radius);
+  color: var(--sl-color-gray-2);
+  font-size: var(--sl-text-xs);
+  padding: 0.35rem 0.8rem;
+}
+.sc__reset:hover {
+  border-color: var(--sl-color-accent);
+}
+.sc__done-msg {
+  font-weight: 600;
+  color: var(--edb-warm);
+}

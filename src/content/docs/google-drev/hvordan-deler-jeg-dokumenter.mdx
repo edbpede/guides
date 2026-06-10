@@ -1,0 +1,72 @@
+---
+title: Hvordan deler jeg dokumenter?
+description: Del et Google-dokument med en person uden for Ishøj Kommune eller uden @meddel.dk-konto.
+sidebar:
+  label: Del et dokument
+  order: 1
+---
+
+import { Aside, CardGrid, LinkCard, Steps } from "@astrojs/starlight/components";
+
+I Ishøj Kommune er Google Drev sat op, så dokumenter som standard kun deles med
+andre i kommunen og folk med en **meddel.dk**-konto. Du kan sagtens dele med
+udefrakommende — det kræver bare et par ekstra tryk.
+
+<Aside type="note" title="Hvornår skal du bruge denne guide?">
+Brug den, når standarddelingen er for begrænset, og en ekstern modtager skal
+kunne læse eller redigere dokumentet.
+</Aside>
+
+## Sådan gør du
+
+<Steps>
+
+1. Gå ind i det dokument, ark eller andet, du vil dele.
+2. Tryk på <img src="/screens/image-19.png" class="edb-inline" alt="Del-knap" />.
+3. Vælg <img src="/screens/image-20.png" class="edb-inline" alt="delingsindstillinger" />.
+4. Vælg <img src="/screens/image-21.png" class="edb-inline" alt="generel adgang" />.
+5. Under **Generel adgang** trykker du på **Begrænset** og vælger
+   **Alle med linket**.
+
+   <figure>
+   ![Vælg "Alle med linket"](/screens/image-65.png)
+   </figure>
+
+6. Vælg, om modtageren skal være **Læser** (kan kun læse) eller **Redaktør**
+   (kan også redigere).
+
+   <figure>
+   ![Vælg Læser eller Redaktør](/screens/image-66.png)
+   </figure>
+
+7. Tryk på <img src="/screens/gdrive-share-button-01.png" class="edb-inline" alt="kopiér link" /> for at kopiere delingslinket.
+8. Linket kan fx se sådan ud:
+
+   `https://docs.google.com/document/d/1e8MkOk.../edit?usp=sharing`
+
+9. Send linket til dem, du vil dele med.
+
+</Steps>
+
+## Hvis det ikke virker
+
+<details class="edb-trouble">
+<summary>Modtageren kan ikke åbne linket</summary>
+
+Tjek, at **Generel adgang** er ændret fra **Begrænset** til **Alle med linket**,
+og at du har sendt det kopierede link.
+
+</details>
+
+<details class="edb-trouble">
+<summary>Modtageren kan ikke redigere</summary>
+
+Tjek, at rollen er sat til **Redaktør** og ikke kun **Læser**.
+
+</details>
+
+## Relaterede guides
+
+<CardGrid>
+  <LinkCard title="Google Drev og deling" href="/google-drev/" />
+</CardGrid>

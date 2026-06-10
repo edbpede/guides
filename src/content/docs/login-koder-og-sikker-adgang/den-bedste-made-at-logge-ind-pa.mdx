@@ -1,0 +1,139 @@
+---
+title: Den bedste måde at logge ind på
+description: Den anbefalede måde at logge ind på Aula og andre undervisningsportaler med din @meddel.dk-konto.
+sidebar:
+  order: 1
+---
+
+import { Aside, CardGrid, LinkCard, Steps } from "@astrojs/starlight/components";
+
+Som medarbejder logger du ind på Aula og andre undervisningsportaler med din
+**@meddel.dk**-konto — også selvom knappen hedder "Unilogin". Her er de to veje,
+der virker.
+
+<Aside type="note" title="Hvornår skal du bruge denne guide?">
+Brug guiden, når du som medarbejder møder Unilogin/MitID/lokalt login og er i
+tvivl om, hvilken konto du skal vælge.
+</Aside>
+
+<Aside type="tip" title="Lidt baggrund — hvorfor @meddel.dk?">
+Fra den 12. december 2024 [udfases Unilogin for personale](https://viden.stil.dk/display/OFFSKOLELOGIN/Udfasning+af+Medarbejdere+i+Unilogin+IdP).
+I stedet bruger du din **@meddel.dk**-konto (typisk dit Unilogin efterfulgt af
+"@meddel.dk") til alle undervisningslogins som Aula, Clio og Alinea. Din
+@meddel.dk-konto giver præcis samme adgang som dit gamle Unilogin — der er ingen
+grund til bekymring.
+</Aside>
+
+## Metode 1: Unilogin-vejen
+
+Det kan virke skørt, at vi går gennem "Unilogin"-vejen, selvom vi ikke bruger
+selve Unilogin. Men det er en af de måder, der virker.
+
+<Steps>
+
+1. Gå ind på fx [Aula](https://aula.dk).
+
+   ![Aulas forside](/screens/login/login-m1-1.jpg)
+
+2. Tryk på den blå **"Unilogin / MitID / Lokalt login"**-knap.
+
+   ![Den blå login-knap er markeret](/screens/login/login-m1-2.jpg)
+
+3. Tryk på **"Unilogin"**.
+
+   ![Unilogin-valget er markeret](/screens/login/login-m1-3.jpg)
+
+4. Indtast dit brugernavn — husk **"@meddel.dk"**!
+
+   ![Feltet til brugernavn er markeret](/screens/login/login-m1-4.jpg)
+
+5. Tryk **"Næste"**.
+
+   ![Næste-knappen er markeret](/screens/login/login-m1-5.jpg)
+
+6. Dit brugernavn er allerede sat ind. Indtast dit kodeord — det samme, som du
+   bruger til din Chromebook.
+
+   ![Feltet til kodeord er markeret](/screens/login/login-m1-6.jpg)
+
+7. Tryk på **"Login"**-knappen.
+
+   ![Login-knappen er markeret](/screens/login/login-m1-7.jpg)
+
+8. Du er nu kommet ind på Aula. 🎉
+
+   ![Aula er åbnet](/screens/login/login-m1-8.jpg)
+
+</Steps>
+
+## Metode 2: Gennem Ishøj Kommunes "IdP"
+
+Hvis den første metode ikke virker, kan du bruge Ishøj Kommunes "IdP" direkte.
+Grunden til, at det ikke er metode 1, er, at den nogle gange kan fejle.
+
+<Steps>
+
+1. Gå ind på [Aula](https://aula.dk).
+
+   ![Aulas forside](/screens/login/login-m2-1.jpg)
+
+2. Tryk på **"Andre loginmuligheder"**.
+
+   ![Andre loginmuligheder er markeret](/screens/login/login-m2-2.jpg)
+
+3. Tryk på **"KOMMUNAL IDP"**.
+
+   ![Kommunal IdP er markeret](/screens/login/login-m2-3.jpg)
+
+4. Tryk på **"Vælg Kommune"** og vælg **"Ishøj"**.
+
+   ![Vælg kommune er markeret](/screens/login/login-m2-4.jpg)
+
+5. Tryk på **"OK"**.
+
+   ![OK-knappen er markeret](/screens/login/login-m2-5.jpg)
+
+6. Indtast dit brugernavn (**@meddel.dk**) og kodeord — det samme som til din
+   Chromebook.
+
+   ![Felterne til brugernavn og kodeord er markeret](/screens/login/login-m2-6.jpg)
+
+7. Tryk på **"Login"**.
+
+   ![Login-knappen er markeret](/screens/login/login-m2-7.jpg)
+
+8. Du er nu på Aula! 🎉
+
+   ![Aula er åbnet](/screens/login/login-m2-8.jpg)
+
+</Steps>
+
+## Hvis det ikke virker
+
+<details class="edb-trouble">
+<summary>Jeg kan ikke komme ind med Unilogin-vejen</summary>
+
+Prøv metode 2 gennem Ishøj Kommunes lokale IdP direkte. Husk at bruge dit
+brugernavn med **@meddel.dk** og samme kode som til din Chromebook.
+
+</details>
+
+<details class="edb-trouble">
+<summary>Jeg har glemt min kode</summary>
+
+Brug guiden [Skift din egen Chromebook-kode](/login-koder-og-sikker-adgang/sadan-skifter-du-din-egen-kode-pa-din-chromebook/).
+
+</details>
+
+## Relaterede guides
+
+<CardGrid>
+  <LinkCard
+    title="Ny medarbejder: Kom ind på din Chromebook"
+    href="/chromebook-og-forste-dag/hvordan-kommer-jeg-ind-pa-min-chromebook/"
+  />
+  <LinkCard
+    title="Få OS2faktor til din Chromebook"
+    href="/login-koder-og-sikker-adgang/fa-os2faktor-til-din-chromebook/"
+  />
+</CardGrid>

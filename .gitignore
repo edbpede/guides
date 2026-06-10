@@ -1,16 +1,24 @@
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+# build output
+dist/
+# generated types
+.astro/
+# dependencies
+node_modules/
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# environment variables
+.env
+.env.production
+# macOS
+.DS_Store
+# jetbrains setting folder
+.idea/
 
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
-
-# Book build output
+# legacy GitBook artifacts
 _book
-
-# eBook build output
 *.epub
 *.mobi
 *.pdf
