@@ -266,6 +266,32 @@
 */
 :root {
   --sl-sidebar-width: 17rem;
+  /* The right-hand "På denne side" panel. Narrower than the left nav so the
+     table of contents reads as a slim index, leaving the article more room. */
+  --edb-toc-width: 13.5rem;
+}
+
+/* ----------------------------------------- "På denne side" panel width - */
+/*
+  Starlight sizes the right TOC column from --sl-sidebar-width, the same
+  variable the left nav uses. Substitute our own --edb-toc-width into both
+  the TOC container and the article's width so the panel narrows and the
+  article reclaims the freed space (the two widths still sum to 100%).
+  These rules are unlayered, so they win over Starlight's @layer styles.
+*/
+@media (min-width: 72rem) {
+  .right-sidebar-container {
+    width: calc(
+      var(--edb-toc-width) +
+        (100% - var(--sl-content-width) - var(--edb-toc-width)) / 2
+    );
+  }
+  [data-has-sidebar][data-has-toc] .main-pane {
+    width: calc(
+      var(--sl-content-width) +
+        (100% - var(--sl-content-width) - var(--edb-toc-width)) / 2
+    );
+  }
 }
 
 /* --------------------------------------- collapsible sidebar (desktop) - */
