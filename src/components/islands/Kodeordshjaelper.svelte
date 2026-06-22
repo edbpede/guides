@@ -40,8 +40,12 @@
     }
   }
 
-  // Generate one on first render so the box is never empty.
-  generate();
+  // Generér først efter mount på klienten. $effect kører aldrig under SSR, så
+  // serveren udsender en tom (deterministisk) boks, og klienten fylder den ud
+  // én gang — uden hydrerings-mismatch fra Math.random().
+  $effect(() => {
+    generate();
+  });
 
   let length = $derived(phrase.length);
   let longEnough = $derived(length >= 15);
