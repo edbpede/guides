@@ -1,0 +1,106 @@
+---
+title: Få OS2faktor til din Chromebook
+description: Opsæt OS2faktor på din Chromebook, så du kan tilgå sikre filer og andre følsomme funktioner.
+sidebar:
+  label: Opsæt OS2faktor
+  order: 5
+---
+
+import { Aside, CardGrid, LinkCard, Steps } from "@astrojs/starlight/components";
+import StepChecklist from "../../../components/islands/StepChecklist.tsx";
+
+I Ishøj Kommune bruger vi **OS2faktor**, når vi skal tilgå sikre filer i Aula
+eller skifte koder på elevernes meddel-konto. Det er en ekstra sikkerhedslås
+oven på dit kodeord – lidt ligesom en ekstra lås på din dør.
+
+<Aside type="note" title="Hvornår skal du bruge denne guide?">
+Brug guiden første gang, du skal aktivere OS2faktor, eller når du skal oprette en
+ny OS2faktor-enhed.
+</Aside>
+
+<Aside type="tip" title="Hvordan fungerer det?">
+Når du logger ind på noget følsomt, beder OS2faktor om en **PIN-kode**. Den er
+din "ekstra nøgle", som du bruger sammen med dit normale kodeord. På den måde er
+det meget sværere for uautoriserede at få adgang – også selvom de skulle kende
+dit kodeord.
+</Aside>
+
+## Installér OS2faktor på din Chromebook
+
+<Steps>
+
+1. Tryk på Chrome-ikonet nederst på din proceslinje:
+   <img src="/screens/trin001-removebg-preview.png" class="edb-inline" alt="Chrome-ikon" />
+2. Tryk på puslespilsbrikken øverst til højre i Chrome:
+   <img src="/screens/trin002.png" class="edb-inline" alt="puslespilsbrik" />
+3. Find **"OS2faktor Chrome Extension"** og tryk på knappenålen:
+   <img src="/screens/image-42.png" class="edb-inline" alt="knappenål" />
+4. Nu er OS2faktor sat fast i din browser, så den er nem at finde.
+5. Det skulle gerne se sådan ud: <img src="/screens/image-44.png" class="edb-inline" alt="fastgjort ikon" />
+6. Tryk på OS2faktor-ikonet: <img src="/screens/image-45.png" class="edb-inline" alt="OS2faktor-ikon" />
+7. Tryk på **"Aktiver enhed"**.
+
+   ![Aktiver enhed](/screens/image-46.png)
+
+8. Giv din enhed et navn – fx **"Chromebook"**.
+
+   ![Navngiv enhed](/screens/image-47.png)
+
+9. Tryk på <img src="/screens/image-48.png" class="edb-inline" alt="fortsæt" /> for at fortsætte.
+10. Vælg en PIN-kode på 4 cifre. Den må ikke være 4 ens cifre.
+
+    ![Vælg PIN-kode](/screens/image-49.png)
+
+11. Tryk på <img src="/screens/image-50.png" class="edb-inline" alt="fortsæt" /> for at fortsætte.
+12. Nu skal du bekræfte din identitet med dit **MitID**.
+
+    ![Bekræft med MitID](/screens/image-51.png)
+
+13. Tryk på <img src="/screens/image-52.png" class="edb-inline" alt="fortsæt" /> for at fortsætte.
+14. Log ind med dit **MitID** (i mit tilfælde **edbpede**).
+
+    ![MitID-login](/screens/image-53.png)
+
+15. Når du er færdig, ser du denne bekræftelse – så er du klar! 🎉
+
+    ![OS2faktor er aktiveret](/screens/image-55.png)
+
+</Steps>
+
+<StepChecklist
+  client:visible
+  title="Tjekliste – har du husket det hele?"
+  steps={[
+    "OS2faktor-udvidelsen er sat fast i Chrome",
+    "Enheden er navngivet (fx 'Chromebook')",
+    "PIN-kode er valgt (4 cifre, ikke 4 ens)",
+    "Identitet bekræftet med MitID",
+    "Bekræftelsesskærmen er vist",
+  ]}
+/>
+
+Vil du se, hvordan du nu **bruger** din OS2faktor? Læs
+[Brug OS2faktor](/login-koder-og-sikker-adgang/hvordan-bruger-jeg-os2faktor/).
+
+## Hvis det ikke virker
+
+<details class="edb-trouble">
+<summary>Jeg sidder fast</summary>
+
+Prøv at gennemgå trinnene én gang til fra starten. Fortsætter problemet, så skriv
+til EDB Pede på Aula, og nævn hvilken guide og hvilket trin du sidder fast ved.
+
+</details>
+
+## Relaterede guides
+
+<CardGrid>
+  <LinkCard
+    title="Brug OS2faktor"
+    href="/login-koder-og-sikker-adgang/hvordan-bruger-jeg-os2faktor/"
+  />
+  <LinkCard
+    title="Fjern gamle OS2faktor-enheder"
+    href="/login-koder-og-sikker-adgang/hvordan-fjerner-jeg-gamle-enheder-fra-os2faktor/"
+  />
+</CardGrid>

@@ -1,0 +1,123 @@
+---
+title: Hvordan kommer jeg ind på min Chromebook?
+description: Få styr på dit @meddel.dk-brugernavn, lav dit første kodeord og log ind på din Chromebook.
+sidebar:
+  label: Ny medarbejder
+  order: 1
+---
+
+import { Aside, CardGrid, LinkCard, Steps } from "@astrojs/starlight/components";
+import Kodeordshjaelper from "../../../components/islands/Kodeordshjaelper.svelte";
+
+**Velkommen til Strandgårdskolen!** Du har fået en Chromebook, men ved måske
+ikke, hvordan du kommer ind. Når du bliver ansat i Ishøj Kommune, oprettes du
+automatisk i kommunens lokale login – det hedder **"@meddel.dk"**.
+
+<Aside type="note" title="Hvornår skal du bruge denne guide?">
+Brug guiden, når du er ny medarbejder, har fået en Chromebook og endnu ikke ved,
+hvilket brugernavn eller kodeord du skal bruge.
+</Aside>
+
+<Aside type="tip" title="Hvad er @meddel.dk?">
+Din @meddel.dk-konto er din adgangsbillet til de portaler og materialer, skolen
+betaler for. Tænk på den som en **komplet erstatning** for dit gamle Unilogin –
+det er to forskellige systemer. Fra 12. december 2024
+[udfases Unilogin for personale](https://viden.stil.dk/display/OFFSKOLELOGIN/Udfasning+af+Medarbejdere+i+Unilogin+IdP).
+</Aside>
+
+## Find dit brugernavn
+
+<Steps>
+
+1. Gå ind på [login.ishoj.dk](https://login.ishoj.dk/).
+2. Tryk på <img src="/screens/image-17.png" class="edb-inline" alt="log ind" />.
+3. Log ind med dit MitID (i mit tilfælde **edbpede**).
+
+   <figure>
+   ![MitID-login](/screens/image-12.png)
+   </figure>
+
+4. Dit brugernavn fremgår her:
+
+   <figure>
+   ![Brugernavnet vises](/screens/image-1.png)
+   </figure>
+
+5. Mit brugernavn er altså **edbpede** – det bruger jeg, når jeg logger ind på
+   min Chromebook.
+6. Det er også din e-mail. I mit tilfælde **edbpede@meddel.dk**.
+
+</Steps>
+
+## Lav dit kodeord
+
+I Ishøj Kommune er der ret skrappe krav til kodeord. Her er reglerne kort:
+
+- Mindst **15 tegn** langt (der behøver **ikke** at være tal eller tegn).
+- Må **ikke** indeholde dit navn, fødeby, adresse eller familiemedlemmers navne.
+- Må **ikke** indeholde Æ, Ø eller Å.
+
+<Steps>
+
+1. Tryk på <img src="/screens/image-18.png" class="edb-inline" alt="skift kode" /> for at skifte kode.
+2. Du kan se kravene under **"Regler for kodeordkompleksitet"**.
+
+   <figure>
+   ![Regler for kodeordkompleksitet](/screens/image-2.png)
+   </figure>
+
+3. Et godt trick er at bruge en hel sætning som kodeord, fx
+   *"jeghaderatskiftekodeord"*.
+4. Når du er klar, gemmer du koden ved at trykke på
+   <img src="/screens/image-3.png" class="edb-inline" alt="gem kode" />.
+
+</Steps>
+
+<Aside type="tip" title="Brug for inspiration til et kodeord?">
+Prøv kodeords-hjælperen herunder. Den foreslår et stærkt kodeord, der opfylder
+kommunens krav – og du kan altid lave et nyt.
+</Aside>
+
+<Kodeordshjaelper client:visible />
+
+## Log ind på din Chromebook
+
+<Steps>
+
+1. Åbn din Chromebook og indtast dit brugernavn (med eller uden **@meddel.dk**).
+2. Tryk **"Næste"** og indtast dit nye kodeord.
+3. Du logger nu ind, og Chromebooken installerer et par standard-apps, som Ishøj
+   Kommune har valgt (Geogebra, Google Chrome m.fl.).
+
+</Steps>
+
+## Hvis det ikke virker
+
+<details class="edb-trouble">
+<summary>Jeg kan ikke finde mit brugernavn</summary>
+
+Prøv igen via [login.ishoj.dk](https://login.ishoj.dk/) med MitID. Vises
+brugernavnet stadig ikke, så skriv til EDB Pede på Aula.
+
+</details>
+
+<details class="edb-trouble">
+<summary>Kodeordet bliver afvist</summary>
+
+Tjek kravene: mindst 15 tegn, ingen Æ/Ø/Å, og undgå navne eller andre personlige
+oplysninger.
+
+</details>
+
+## Relaterede guides
+
+<CardGrid>
+  <LinkCard
+    title="Den bedste måde at logge ind på"
+    href="/login-koder-og-sikker-adgang/den-bedste-made-at-logge-ind-pa/"
+  />
+  <LinkCard
+    title="Skift din egen Chromebook-kode"
+    href="/login-koder-og-sikker-adgang/sadan-skifter-du-din-egen-kode-pa-din-chromebook/"
+  />
+</CardGrid>

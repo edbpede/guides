@@ -1,47 +1,49 @@
----
-description: Hurtige valg til lærere på Strandgårdskolen og i Ishøj Kommune.
----
+# EDB Pede — guides
 
-# Hurtige valg for lærere
+Hurtige guides til lærere på Strandgårdskolen og i Ishøj Kommune: login, koder,
+Chromebook, Google Drev, Skoletube, Meebook og nyttige links.
 
-<div align="center"><img src=".gitbook/assets/edbpede.svg" alt="EDB Pede" width="250"></div>
+Bygget med [Astro](https://astro.build) + [Starlight](https://starlight.astro.build),
+[Bun](https://bun.sh), [UnoCSS](https://unocss.dev), Svelte 5 og SolidJS.
 
-Denne side er et hurtigt opslagsværk til de digitale ting, der fylder i hverdagen: login, koder, Chromebook, Google Drev, Skoletube, Meebook og nyttige links.
+## Kom i gang
 
-{% hint style="info" %}
-Start med den situation, der ligner dit problem. Hver guide har korte trin, fejlfindingshjælp og links videre til relaterede guides.
-{% endhint %}
+```bash
+bun install      # installér afhængigheder
+bun run dev      # start udviklingsserver på http://localhost:4321
+bun run check    # Astro/TypeScript-diagnostik
+bun run build    # byg til dist/
+bun run preview  # forhåndsvis det byggede site
+```
 
-## Hvad skal du bruge hjælp til?
+## Sådan tilføjer du en ny guide
 
-{% cards %}
-{% card title="Jeg kan ikke logge ind" href="login-koder-og-sikker-adgang/den-bedste-made-at-logge-ind-pa.md" %}
-Brug din @meddel.dk-konto og se den anbefalede loginvej til Aula og andre læringsplatforme.
-{% endcard %}
+1. Læg en `.mdx`-fil i den rette mappe under `src/content/docs/<kategori>/`.
+   Filnavnet bliver URL'en.
+2. Tilføj frontmatter med `title`, `description` og `sidebar.order`.
+3. Følg den fælles skabelon, de øvrige guides bruger:
+   - en kort indledning,
+   - en `<Aside type="note">` med "Hvornår skal du bruge denne guide?",
+   - `<Steps>` med trin og billeder,
+   - et `## Hvis det ikke virker`-afsnit med `<details class="edb-trouble">`,
+   - `## Relaterede guides` med `<LinkCard>`.
 
-{% card title="Jeg er ny medarbejder" href="chromebook-og-forste-dag/hvordan-kommer-jeg-ind-pa-min-chromebook.md" %}
-Find dit brugernavn, opret kodeord og kom ind på din Chromebook for første gang.
-{% endcard %}
+Nye kategorier tilføjes i `sidebar`-listen i `astro.config.mjs`. Sidebaren under
+hver kategori genereres automatisk fra mappens indhold.
 
-{% card title="Jeg skal skifte en kode" href="login-koder-og-sikker-adgang/README.md" %}
-Vælg mellem elevens Uni-login, elevens Chromebook-kode eller din egen Chromebook-kode.
-{% endcard %}
+## Projektstruktur
 
-{% card title="Jeg skal dele i Google Drev" href="google-drev/hvordan-deler-jeg-dokumenter.md" %}
-Del dokumenter med personer uden for Ishøj Kommune eller uden @meddel.dk-konto.
-{% endcard %}
+```
+src/
+  content/docs/        Alle guides (MDX), én mappe per kategori
+  components/          Astro-komponenter (SituationCards, Embed)
+    islands/           Svelte- og Solid-øer (Kodeordshjælper, StepChecklist)
+    overrides/         Starlight-komponentoverrides (Footer)
+  styles/theme.css     Design tokens (lyst/mørkt tema) + komponentstil
+  assets/brand/        Logo
+public/screens/        Skærmbilleder til guides
+```
 
-{% card title="Jeg skal bruge Skoletube/WeVideo" href="video-medier-og-laeremidler/README.md" %}
-Opret kanaler, find kanaler, invitér andre og se de relevante videoguides.
-{% endcard %}
-
-{% card title="Jeg leder efter gode links" href="links-og-genveje/README.md" %}
-Find genveje til fx DeepL, YouTube-konvertering og andre nyttige tjenester.
-{% endcard %}
-{% endcards %}
-
-## Hvis du ikke ved hvor du skal starte
-
-1. Prøv først kategorien [Login, koder og sikker adgang](login-koder-og-sikker-adgang/README.md), hvis problemet handler om adgang.
-2. Brug [Chromebook og første dag](chromebook-og-forste-dag/README.md), hvis du er ny eller sidder ved din Chromebook.
-3. Brug [Links og genveje](links-og-genveje/README.md), hvis du bare mangler en bestemt tjeneste.
+Designet er bygget på tweakcn-temaet "Modern Minimal" som farvegrundlag, udvidet
+med en varm signaturfarve. Kodningsretningslinjer findes i
+`.augment/rules/astro-dev-pro.md`.
