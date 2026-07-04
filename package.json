@@ -21,7 +21,7 @@
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
     "@unocss/astro": "^66.7.0",
     "astro": "^6.4.5",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.0",
     "solid-js": "^1.9.13",
     "svelte": "^5.56.3",
     "unocss": "^66.7.0"
