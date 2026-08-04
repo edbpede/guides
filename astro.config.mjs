@@ -1,9 +1,10 @@
 // @ts-check
-import { defineConfig } from "astro/config";
-import starlight from "@astrojs/starlight";
-import UnoCSS from "@unocss/astro";
-import svelte from "@astrojs/svelte";
+
 import solid from "@astrojs/solid-js";
+import starlight from "@astrojs/starlight";
+import svelte from "@astrojs/svelte";
+import UnoCSS from "@unocss/astro";
+import { defineConfig } from "astro/config";
 
 // Old GitBook URLs -> new Starlight paths. Keeps published links alive.
 // Mirrors the `redirects` block from the former .gitbook.yaml.

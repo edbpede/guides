@@ -1,54 +1,79 @@
 <script lang="ts">
-  // Svelte 5 (runes). Suggests a memorable Danish passphrase that satisfies
-  // Ishøj Kommune's rules: ≥15 characters, no Æ/Ø/Å, no personal info.
-  // Tied directly to the "Hvordan kommer jeg ind på min Chromebook?" guide.
+// Svelte 5 (runes). Suggests a memorable Danish passphrase that satisfies
+// Ishøj Kommune's rules: ≥15 characters, no Æ/Ø/Å, no personal info.
+// Tied directly to the "Hvordan kommer jeg ind på min Chromebook?" guide.
 
-  // Everyday Danish words without Æ/Ø/Å, easy to remember and type.
-  const words = [
-    "kaffe", "cykel", "sommer", "vinter", "skole", "bord", "stol", "vindue",
-    "have", "regn", "solskin", "musik", "bog", "penalhus", "tavle", "kridt",
-    "frikvarter", "madpakke", "termokande", "blyant", "ferie", "fredag",
-    "kalender", "computer", "naboen", "kanin", "delfin", "papir", "klokken",
-  ];
+// Everyday Danish words without Æ/Ø/Å, easy to remember and type.
+const words = [
+  "kaffe",
+  "cykel",
+  "sommer",
+  "vinter",
+  "skole",
+  "bord",
+  "stol",
+  "vindue",
+  "have",
+  "regn",
+  "solskin",
+  "musik",
+  "bog",
+  "penalhus",
+  "tavle",
+  "kridt",
+  "frikvarter",
+  "madpakke",
+  "termokande",
+  "blyant",
+  "ferie",
+  "fredag",
+  "kalender",
+  "computer",
+  "naboen",
+  "kanin",
+  "delfin",
+  "papir",
+  "klokken",
+];
 
-  let phrase = $state("");
+let phrase = $state("");
 
-  function pick(): string {
-    return words[Math.floor(Math.random() * words.length)];
+function pick(): string {
+  return words[Math.floor(Math.random() * words.length)];
+}
+
+function generate(): void {
+  const chosen: string[] = [];
+  // Keep adding distinct words until we comfortably clear the 15-char minimum.
+  while (chosen.join("").length < 16) {
+    const w = pick();
+    if (!chosen.includes(w)) chosen.push(w);
   }
+  phrase = chosen.join("");
+}
 
-  function generate(): void {
-    const chosen: string[] = [];
-    // Keep adding distinct words until we comfortably clear the 15-char minimum.
-    while (chosen.join("").length < 16) {
-      const w = pick();
-      if (!chosen.includes(w)) chosen.push(w);
-    }
-    phrase = chosen.join("");
+let copied = $state(false);
+
+async function copy(): Promise<void> {
+  if (!phrase) return;
+  try {
+    await navigator.clipboard.writeText(phrase);
+    copied = true;
+    setTimeout(() => (copied = false), 1600);
+  } catch {
+    copied = false;
   }
+}
 
-  let copied = $state(false);
+// Generér først efter mount på klienten. $effect kører aldrig under SSR, så
+// serveren udsender en tom (deterministisk) boks, og klienten fylder den ud
+// én gang — uden hydrerings-mismatch fra Math.random().
+$effect(() => {
+  generate();
+});
 
-  async function copy(): Promise<void> {
-    if (!phrase) return;
-    try {
-      await navigator.clipboard.writeText(phrase);
-      copied = true;
-      setTimeout(() => (copied = false), 1600);
-    } catch {
-      copied = false;
-    }
-  }
-
-  // Generér først efter mount på klienten. $effect kører aldrig under SSR, så
-  // serveren udsender en tom (deterministisk) boks, og klienten fylder den ud
-  // én gang — uden hydrerings-mismatch fra Math.random().
-  $effect(() => {
-    generate();
-  });
-
-  let length = $derived(phrase.length);
-  let longEnough = $derived(length >= 15);
+let length = $derived(phrase.length);
+let longEnough = $derived(length >= 15);
 </script>
 
 <div class="kh">

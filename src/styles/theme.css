@@ -21,10 +21,8 @@
   --edb-warm-soft: oklch(0.769 0.16 64.5 / 0.14);
 
   /* Typography */
-  --sl-font: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI",
-    Roboto, sans-serif;
-  --sl-font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace,
-    monospace;
+  --sl-font: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --sl-font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, monospace;
 }
 
 /* ---------------------------------------------------------------- DARK -- */
@@ -281,15 +279,13 @@
 */
 @media (min-width: 72rem) {
   .right-sidebar-container {
-    width: calc(
-      var(--edb-toc-width) +
-        (100% - var(--sl-content-width) - var(--edb-toc-width)) / 2
-    );
+    width: calc(var(--edb-toc-width) + (100% - var(--sl-content-width) - var(--edb-toc-width)) / 2);
   }
   [data-has-sidebar][data-has-toc] .main-pane {
     width: calc(
       var(--sl-content-width) +
-        (100% - var(--sl-content-width) - var(--edb-toc-width)) / 2
+      (100% - var(--sl-content-width) - var(--edb-toc-width)) /
+      2
     );
   }
 }
