@@ -6,7 +6,14 @@ sidebar:
   order: 6
 ---
 
-import { Aside, CardGrid, LinkCard, Steps } from "@astrojs/starlight/components";
+import {
+  Aside,
+  CardGrid,
+  LinkCard,
+  Steps,
+  TabItem,
+  Tabs,
+} from "@astrojs/starlight/components";
 
 Når du skal ind i noget følsomt – fx Aulas **sikre filer** – beder OS2faktor om
 din PIN-kode. Her er et eksempel på, hvordan det foregår.
@@ -16,6 +23,93 @@ Brug guiden, når du fx skal ind i sikre filer på Aula.
 </Aside>
 
 ## Sådan gør du
+
+Vælg den type enhed, du sidder med. Trinnene er lidt forskellige på Android og Chromebook.
+
+<Tabs syncKey="os2faktor-platform">
+<TabItem label="Android">
+
+<Steps>
+
+1. Åbn [Aula](https://aula.dk), og tryk på loginmuligheden med **UniLogin**,
+   **MitID** og **Lokalt login**. Vælg derefter **Lokalt login**, find **Ishøj**, og
+   log ind med din [@meddel.dk-konto](/login-koder-og-sikker-adgang/den-bedste-made-at-logge-ind-pa/).
+
+   <img
+     src="/screens/os2faktor/android-01.png"
+     class="edb-phone-shot"
+     alt="Vælg loginmuligheden med UniLogin, MitID og Lokalt login på Android"
+     width="1080"
+     height="2400"
+   />
+
+2. Åbn [**Filer & dokumenter**](https://aula.dk/portal/#/dokumenter).
+
+   <img
+     src="/screens/os2faktor/android-02.png"
+     class="edb-phone-shot"
+     alt="Siden Filer og dokumenter i Aula"
+     width="1080"
+     height="2400"
+   />
+
+3. Tryk på **Gå til Sikre filer**.
+
+   <img
+     src="/screens/os2faktor/android-03.png"
+     class="edb-phone-shot"
+     alt="Knappen Gå til Sikre filer"
+     width="1080"
+     height="2400"
+   />
+
+4. Aula spørger, om du vil logge ind med et højere sikkerhedsniveau. Tryk **JA**.
+
+   <img
+     src="/screens/os2faktor/android-04.png"
+     class="edb-phone-shot"
+     alt="Bekræft højere sikkerhedsniveau med JA"
+     width="1080"
+     height="2400"
+   />
+
+5. Vælg den Android-enhed, du har oprettet i OS2faktor. I eksemplet hedder den
+   **EmuDroid**.
+
+   <img
+     src="/screens/os2faktor/android-05.png"
+     class="edb-phone-shot"
+     alt="Vælg Android-enheden EmuDroid til OS2faktor"
+     width="1080"
+     height="2400"
+   />
+
+6. Åbn OS2faktor fra Android-meddelelsen, og tast din sekscifrede **PIN-kode**.
+   Kontrollér derefter, at kontrolkoden i browseren og appen er den samme, og tryk
+   **Godkend**.
+
+   <img
+     src="/screens/os2faktor/android-06.png"
+     class="edb-phone-shot"
+     alt="Indtast den sekscifrede PIN-kode i OS2faktor"
+     width="1080"
+     height="2400"
+   />
+
+7. Du har nu adgang til **Sikre filer**. 🎉
+
+   <img
+     src="/screens/os2faktor/android-07.png"
+     class="edb-phone-shot"
+     alt="Sikre filer er åbnet i Aula, og følsomt indhold er skjult"
+     width="1080"
+     height="2400"
+   />
+
+</Steps>
+
+</TabItem>
+<TabItem label="Chromebook">
 
 <Steps>
 
@@ -43,6 +137,9 @@ Brug guiden, når du fx skal ind i sikre filer på Aula.
 7. Sådan! Du har nu brugt OS2faktor til at tilgå følsom data. 🎉
 
 </Steps>
+
+</TabItem>
+</Tabs>
 
 ## Hvis det ikke virker
 

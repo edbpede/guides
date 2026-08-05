@@ -100,6 +100,12 @@
   margin-inline: auto;
 }
 
+/* Keep full-height phone captures readable without dominating wide layouts. */
+.sl-markdown-content img.edb-phone-shot {
+  width: min(100%, 30rem);
+  height: auto;
+}
+
 .sl-markdown-content figure {
   margin-inline: auto;
   text-align: center;
