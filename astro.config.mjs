@@ -56,7 +56,7 @@ const gitbookRedirects = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://guides.edbpede.net",
+  site: "https://docs.edbpede.net",
   redirects: gitbookRedirects,
   integrations: [
     UnoCSS({ injectReset: false }),

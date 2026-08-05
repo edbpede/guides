@@ -135,10 +135,8 @@ valid `<title>` even when island hydration is broken. Verify island changes by h
   commit to `main`.
 - `check-added-large-files` caps additions at 500 KB. Compress screenshots before adding
   them to `public/screens/`.
-- `astro.config.mjs` sets `site: "https://guides.edbpede.net"` while
-  `.github/workflows/deploy.yml` publishes with `cname: docs.edbpede.net`. These
-  disagree; confirm the intended canonical host with the maintainer before relying on
-  either for absolute URLs.
+- The canonical production host is `https://docs.edbpede.net`. Keep the `site` value in
+  `astro.config.mjs` and the `cname` value in `.github/workflows/deploy.yml` aligned.
 - The sidebar-collapse state is restored by an inline script in the `head` array of
   `astro.config.mjs` and consumed by `src/components/overrides/PageFrame.astro`. Changing
   the `edb-sidebar-collapsed` localStorage key or the
