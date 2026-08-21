@@ -66,9 +66,11 @@ that `/`, `/google-drev/` and `/meebook/` return a `<title>`
   `astro.config.mjs`. Starlight owns the base/reset layer. Note that
   `.agents/rules/astro-dev-pro.md` recommends `presetWind4({ reset: true })` —
   this repo deliberately differs; do not "fix" it toward the rule file.
-- Svelte islands carry their own scoped `<style>`. The Solid island
-  (`src/components/islands/StepChecklist.tsx`) cannot, so its `.sc__*` classes
-  are defined in `theme.css` — put styles for any new `.tsx` island there too.
+- Svelte islands usually carry their own scoped `<style>` (see
+  `Kodeordshjaelper.svelte`). `StepChecklist.svelte` is the exception: its
+  `.sc__*` classes are defined globally in `theme.css` rather than in a local
+  `<style>` block — keep them there rather than moving them into the
+  component.
 
 ## Git
 
