@@ -1,6 +1,5 @@
 // @ts-check
 
-import solid from "@astrojs/solid-js";
 import starlight from "@astrojs/starlight";
 import svelte from "@astrojs/svelte";
 import UnoCSS from "@unocss/astro";
@@ -61,7 +60,6 @@ export default defineConfig({
   integrations: [
     UnoCSS({ injectReset: false }),
     svelte(),
-    solid(),
     starlight({
       title: "EDB Pede",
       favicon: "/favicon.svg",
